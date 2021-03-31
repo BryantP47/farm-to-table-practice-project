@@ -65,7 +65,7 @@ body{
     font-family: 'PT Sans', sans-serif;
     background-color:#FFFAFA;
 }
-h1, h2, h3, h4{ /*this is css that pertains to all of these selectors*/
+h1, h2, h3, h4{ 
     letter-spacing: 3px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -100,6 +100,8 @@ a:visited{
 i{
     font-size: 5rem;
 }
+
+
 /*header section styles*/
 header nav{
     position:fixed;
@@ -108,7 +110,6 @@ header nav{
     background-color:rgba(255, 255, 255, 0.8);
     display:flex;
     justify-content:space-between;
-    align-items:center;
     height:10vh;
     z-index: 999;
 }
@@ -283,43 +284,37 @@ nav.main{
 nav.main a{
     margin: 2% 0;
 }
-.copyright{
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-}
 
 /*Media Queries*/
 /*Tablet*/
 @media (max-width: 800px){
     .links{
-        width:70%;
+          width:70%;
     }
     #about .text{
-        width:80%;
+         width:80%;
     }
-    .gallery div .hide{
-        background-color:#fff;
-        display:block;
-        width:70%;
+    .gallery div .tie{
+         background-color:#fff;
+         display:block;
+         width:70%;
     }
-    .gallery div .hide h2{
-        font-size:2.2rem;
+    .gallery div .tie h2{
+         font-size:2.2rem;
     }
     .contact-info{
-        width:50%;
+         width:50%;
     }
     .img-container{
-        width:80%;
+         width:80%;
     }
     .left{
-        width:60%;
+         width:60%;
     }
     .right{
-        width:40%;
+          width:40%;
     }
 }
-
 /*phone*/
 @media (max-width: 500px){
     header nav{
@@ -327,13 +322,13 @@ nav.main a{
         height:18vh;
     }
     .links{
-        width:100%;
+          width:100%;
     }
     .logo{
-        text-align:center;
+         text-align:center;
     }
     .titles{
-        background-color:rgba(255, 255, 255, 0.8);
+         background-color:rgba(255, 255, 255, 0.8);
     }
     .container{
         flex-wrap:wrap;
@@ -372,8 +367,5 @@ nav.main a{
     footer div{
         width:90%;
         margin:4% 0;
-    }
-    .copyright{
-        justify-content:flex-start;
     }
 }
